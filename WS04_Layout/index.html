@@ -2,10 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS04_Layout</title>
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>WS04_Layout</h1>
+    <header>
+        <h1>Hi! My name is Petra</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Here's a picture of me</p>
+            <img src="images/IMG_0323.JPG" alt="Mirror selfie of a person wearing a black coat and grey knitted dress" class="mirrorselfie">
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Thriftshopping</li>
+                <li>Reading</li>
+                <li>Volunteering</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/petrapaavola" class="transition-button">Here's my LinkedIn</a>
+        </section>
+
+        <section>
+            <h2>Funny Facts</h2>
+            <table class="funnyfacts">
+                <tr>
+                    <th>Category</th>
+                    <th>Funny fact or Quirky Detail</th>
+                </tr>
+                <tr>
+                    <td>Favourite Food</td>
+                    <td>Sushi</td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>I'm known as a distinguished quarters player</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h2>Extras</h2>
+            <div class="content-box">
+                <h3>Sample Heading</h3>
+                <p>This is a sample paragraph inside a div element.</p>
+            </div>
+            <div class="animation-box"></div>
+            <ul class="pseudo-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+            <blockquote class="quote">
+                Oispa kahvii
+            </blockquote>
+            <div class="flex-container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+            <div class="responsive-box">Resize the window to see the effect</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2025</p>
+    </footer>
 </body>
 </html>

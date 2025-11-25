@@ -1,23 +1,157 @@
-h1 {
-  color: #4a90e2;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  color: #7b4397;
-  font-size: 1.8rem;
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
 p {
-  color: #333;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  text-align: justify;
+      color: #29292e;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+    }
+    
+body {
+      background-color: rgb(215, 246, 253);
+    }
+    
+h1 {
+      font-size: 2em;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      text-align: center;
+    }
+
+.filter-image {
+  max-height: 500px;
+  width: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
 }
+.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+.funnyfacts{
+  margin: 30px;
+  border-collapse: collapse;
+  width: 80%;   
+  font-family: 'Courier New', Courier, monospace;
+}
+    .content-box {
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+.transition-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+  background-color: lightcoral;
+}
+
+.padded-link {
+  padding: 12px 24px;
+  background-color: #add8e6;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 6px;
+  color: black;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #6a5dbe;
+      padding: 2px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #ffffff;
+    }
+
+    tr {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    label {
+      font-weight: bold;
+
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #90cd94;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+    
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+      .pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
