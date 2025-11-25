@@ -1,4 +1,4 @@
-Tänne rakennan verkkosivuja osana Web-sivuston kehittäminen -kurssia Laurea-ammattikorkeakoulussa syksyllä 2025.
+Here I am building websites as part of the Web Development course at Laurea University of Applied Sciences in autumn 2025.
 
 ### [WS01 - HTML Basics](WS01_HTML/index.html)
 

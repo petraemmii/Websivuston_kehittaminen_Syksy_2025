@@ -1,53 +1,83 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My First HTML Page</title>
+    <meta charset="utf-8">
+    <title>My First HTML Page - WS05</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="responsive-nav">
-      <button class="menu-toggle">☰ Menu</button>
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>Hi! My name is Petra</h1>
-    <p>I'm 25 years old</p>
-    <img src="images/IMG_0323.JPG" alt="Mirror selfie of a person wearing a black coat and grey knitted dress" class="mirrorselfie">
-    <h2>List of my hobbies:</h2>
-    <ul>
-        <li>Thriftshopping</li>
-        <li>Reading</li>
-        <li>Volunteering</li>
+    <input type="radio" name="section" id="tab-about" checked class="sr-only">
+    <input type="radio" name="section" id="tab-hobbies" class="sr-only">
+    <input type="radio" name="section" id="tab-contact" class="sr-only">
+
+    <header>
+        <h1>Hi! My name is Petra</h1>
+
+        <nav class="responsive-nav">
+            <input type="checkbox" id="menu-toggle" class="sr-only">
+            <label for="menu-toggle" class="menu-toggle">☰ Menu</label>
+
+            <ul class="nav-list">
+                <li><label for="tab-about">Home</label></li>
+                <li><label for="tab-hobbies">Hobbies</label></li>
+                <li><label for="tab-contact">Contact</label></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <p>I'm 25 years old</p>
+        <img src="images/IMG_0323.JPG" alt="Mirror selfie of a person wearing a black coat and grey knitted dress" class="mirrorselfie">
+      </section>
+
+      <section id="hobbies">
+        <h2>List of my hobbies:</h2>
+        <ul>
+            <li>Thriftshopping</li>
+            <li>Reading</li>
+            <li>Volunteering</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <a href="https://www.linkedin.com/in/petrapaavola" class="transition-button">Here's my LinkedIn</a>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+
+    <div class="content-box">
+      <h3>Sample Heading</h3>
+      <p>This is a sample paragraph inside a div element.</p>
+    </div>
+
+    <div class="animation-box"></div>
+
+    <ul class="pseudo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
     </ul>
-        <a href="https://www.linkedin.com/in/petrapaavola">Here's my LinkedIn</a>
-        <table>
-    <tr>
-        <th>Category</th>
-        <th>Funny fact or Quirky Detail</th>
-    </tr>
-    <tr>
-        <td>Favourite Food</td>
-        <td>Sushi</td>
-    </tr>
-    <tr>
-        <td>Hobbies</td>
-        <td>I'm known as a distinguished quarters player</td>
-    </tr>
-    </table>
-    <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-    </form>
+
+    <blockquote class="quote">Oispa kahvii</blockquote>
+
     <div class="responsive-container">
       <div class="column">Column 1</div>
       <div class="column">Column 2</div>
     </div>
-    <img src="path/to/image.jpg" alt="Responsive Image" class="responsive-image">
+
+    <img src="images/IMG_0323.JPG" alt="Responsive Image" class="responsive-image">
+
     <div class="media-query-box">Resize the window to see the effect</div>
 </body>
 </html>
