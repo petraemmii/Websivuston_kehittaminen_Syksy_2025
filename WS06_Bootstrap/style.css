@@ -66,6 +66,9 @@ input[type="text"], input[type="email"] { padding:8px; border:1px solid #ddd; bo
 input[type="submit"] { background:#4CAF50; color:#fff; padding:10px; border:none; border-radius:4px; cursor:pointer; }
 input[type="submit"]:hover { background:#45a049; }
 
+.col-md-4 {
+  background-color: white;
+}
 .content-box { padding:10px; margin:10px 0; background:#fff; border:1px solid #ccc; }
 .animation-box { width:50px; height:50px; background:pink; position:relative; animation:move 2s infinite alternate; margin:10px 0; }
 @keyframes move { from{left:0} to{left:80px} }
