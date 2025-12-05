@@ -124,12 +124,20 @@ input[type="submit"]:hover { background:#45a049; }
   .column { flex: 100%; }
 }
 
-.responsive-image { max-width: 100%; height: auto; display:block; margin: 1rem auto; }
+.responsive-image { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 1rem auto;
+  max-height: 500px;
+  border-radius: 20px;
+}
 
 .media-query-box { padding: 20px; text-align: center; border-radius:6px; margin-top:1rem; }
 @media (max-width: 600px) {
   .media-query-box { background-color: lightcoral; }
 }
+
 @media (min-width: 601px) {
   .media-query-box { background-color: lightblue; }
 }
@@ -138,7 +146,6 @@ input[type="submit"]:hover { background:#45a049; }
   .responsive-nav .nav-list { display: none; }
   .menu-toggle { display: inline-block; }
   .column { flex: 100%; min-width: 0; }
-  .media-query-box {background-color: lightblue;}
 }
 
 @media (min-width: 601px) {
